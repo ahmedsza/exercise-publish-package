@@ -38,6 +38,7 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
           scope: '@ahmedsza'
+      - run: echo "registry=https://npm.pkg.github.com/@ahmedsza" >> .npmrc
       - run: npm install
       - run: npm ci
       - run: npm publish
